@@ -1,0 +1,27 @@
+Run on Startup (Windows)
+Option 1: Add to Startup Folder
+Press Win + R, type shell:startup, and hit Enter.
+
+This opens the Startup folder.
+
+Create a shortcut here:
+
+Right-click → New → Shortcut
+
+Point it to your Python script with the interpreter:
+
+C:\Path\To\python.exe C:\Scripts\battery_notify.py
+Name it something like Battery Notifier.
+
+✅ This will start the script every time your PC boots.
+
+🚀 Optional (Run in Background on Boot Silently)
+If you want it to run silently in the background, turn the script into an .exe:
+
+pip install pyinstaller
+pyinstaller --noconsole --onefile battery_notify.py
+Then:
+
+Place the generated .exe in the startup folder.
+
+It will run silently at login without opening a terminal window.

@@ -1,0 +1,6 @@
+[DEFAULT]
+rootdirectory = /home/user/project
+username = hanzllasoomro
+numberofdatabases = 3
+summaryunit = percent
+
